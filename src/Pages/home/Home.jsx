@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <img src="/img/LOGO1.png" className="homeImg" alt="logo" />
+      <img src="https://ik.imagekit.io/stephenanokz98/o/imgs%2FLOGO1.png?alt=media&token=7e16973d-39e2-462e-9f90-1a3404424520" className="homeImg" alt="logo" />
       <h1 className="homeTitle">
         Welcome back, {JSON.parse(localStorage.getItem("user")).username}.
       </h1>
