@@ -33,6 +33,9 @@ import VocationVideo from "./Pages/vocationVideo/VocationVideo";
 import ApostolateTypeList from "./Pages/apostolateTypeList/ApostolateTypeList";
 import ApostolateType from "./Pages/apostolateType/ApostolateType";
 import NewApostolateType from "./Pages/newApostolateType/NewApostolateType";
+import FaqList from "./Pages/faqList/FaqList";
+import NewFaq from "./Pages/newFaq/NewFaq";
+import Faq from "./Pages/faq/Faq";
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -64,6 +67,9 @@ function App() {
               <Route exact path="/quotes" element={<QuoteList />} />
               <Route exact path="/quote/:quoteId" element={<Quote />} />
               <Route exact path="/newquote" element={<NewQuote />} />
+              <Route exact path="/faqs" element={<FaqList />} />
+              <Route exact path="/faq/:faqId" element={<Faq />} />
+              <Route exact path="/newfaq" element={<NewFaq />} />
               <Route exact path="/apostolates" element={<ApostolateList />} />
               <Route
                 exact

@@ -8,6 +8,7 @@ import BurstModeIcon from "@mui/icons-material/BurstMode";
 import BusinessIcon from "@mui/icons-material/Business";
 import ClassIcon from "@mui/icons-material/Class";
 import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
+import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
 
@@ -88,6 +89,19 @@ const Sidebar = () => {
               >
                 <CollectionsIcon className="sidebarIcon" />
                 Gallery Images
+              </li>
+            </Link>
+            <Link to="/faqs" className="link">
+              <li
+                className={
+                  active === "faqs"
+                    ? "sidebarListItem active"
+                    : "sidebarListItem"
+                }
+                onClick={() => handleClick("faqs")}
+              >
+                <ContactSupportIcon className="sidebarIcon" />
+                FAQs
               </li>
             </Link>
             <Link to="/posts" className="link">
